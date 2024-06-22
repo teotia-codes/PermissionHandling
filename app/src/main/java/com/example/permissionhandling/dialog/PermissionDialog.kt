@@ -23,10 +23,7 @@ fun PermissionDialog(
     onGoToAppSettingsClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    AlertDialog(onDismissRequest = {onDismiss },
-        dismissButton = {
-            onDismiss
-        },
+    AlertDialog(onDismissRequest = {onDismiss() },
         confirmButton = {
             Column(
                 modifier = Modifier.fillMaxWidth()
